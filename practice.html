@@ -1,0 +1,61 @@
+<!Doctype html>
+<htmL>
+    <head>TINKERING</head>
+    <body>
+        <div>
+        <p>The result of six times eight is:</p>
+        <p id="test"></p>
+        <p id="test1"></p>
+        <p id="test2"></p>
+       <button type="button" onclick="firstFunction()">ANSWER</button>
+       <p id="test3"></p>
+       <p id="test4"></p>
+       <p id="obj"></p>
+       <p id="conv"></p>
+        </div>
+        <h1>This button shows the time below</h1>
+        <button type="button" onmouseover="innerHTML=Date()">The time is?</button>
+        </div>
+        <p id="len"></p>
+        <script type="text/javascript">
+            function firstFunction(){
+                document.getElementById("test").innerHTML = 6*8;
+                document.getElementById("test1").innerHTML="HELLO";
+                document.getElementById("test2").innerHTML="bye!";
+                document.getElementById("test").innerHTML="Hello"+"bye.";
+                alert("HIIII");
+            }
+            var x,y,z;
+            x=3;
+            y=4;
+            z=Math.pow(x,y);// Incrementation
+            document.getElementById("test3").innerHTML=z;
+
+            var names = ["Ella", 'Stella','Sophia', 'Joanna'];// Use of an array
+            document.getElementById("test4").innerHTML= names;
+
+            //JS Objects
+            var ella = {name: 'Ella', age:20, complex: 'dark' };
+            document.getElementById("obj").innerHTML=
+            ella.name +" is " + ella.age +"years old." +" " + "She is "+ ella.complex +" in complexion.";
+
+            // JS Functions
+            function celFarenheit(farenheit){
+                return 5/9*(farenheit-32);
+            }
+            function farenheitCel(celsius){
+                return 9/5*(celsius+32);
+            }
+            document.getElementById("conv").innerHTML=celFarenheit(100);
+            document.getElementById("conv").innerHTML=farenheitCel(37.77777777777778);
+            var text ="Emmanuella Glenn Nkanang";
+            document.getElementById('len').innerHTML= text.length;
+
+            var txt1 ="Hello";
+            var txt2 ="Ella";
+            var txt3 = txt1.concat(" ",txt2);
+            console.log(txt3);
+        </script>
+        
+    </body>
+</htmL>
